@@ -1,0 +1,40 @@
+/* Customize the appearance of the navigation items */
+ul.nav-tabs {
+  background-color: #333; /* Set background color */
+  color: #fff; /* Set text color */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Style the navigation items and links */
+ul.nav-tabs li {
+  margin-right: 10px;
+}
+
+ul.nav-tabs button {
+  background-color: #444; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Apply hover effect on the buttons */
+ul.nav-tabs button:hover {
+  background-color: #555;
+}
+
+/* Style the active tab */
+ul.nav-tabs button.active {
+  background-color: #007bff; /* Active tab background color */
+}
+
+/* Customize the content within the tabs */
+.ngbNavContent {
+  background-color: #fff; /* Content background color */
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
