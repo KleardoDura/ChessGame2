@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { GameComponent } from './pages/game/game.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     UserProfileComponent,
     SettingsComponent,
+    GameComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
