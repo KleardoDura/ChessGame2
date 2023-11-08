@@ -1,9 +1,7 @@
 <ul ngbNav #nav="ngbNav" class="nav-tabs">
   <li ngbNavItem>
-    <button ngbNavLink>User Profile</button>
-    <ng-template ngbNavContent>
-      <h1 style="margin: 150px">WELCOME USER X Y</h1></ng-template
-    >
+    <button ngbNavLink [routerLink]="'/user-profile'">User Profile</button>
+    <ng-template ngbNavContent></ng-template>
   </li>
   <li ngbNavItem>
     <button ngbNavLink>Settings</button>
