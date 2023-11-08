@@ -3,12 +3,12 @@
     <button ngbNavLink [routerLink]="'/user-profile'">User Profile</button>
     <ng-template ngbNavContent></ng-template>
   </li>
+
   <li ngbNavItem>
-    <button ngbNavLink>Settings</button>
-    <ng-template ngbNavContent>
-      <button style="margin: 150px; border-radius: 5px">Start a game</button>
-    </ng-template>
+    <button ngbNavLink [routerLink]="'/settings'">Settings</button>
+    <ng-template ngbNavContent> </ng-template>
   </li>
+
   <li ngbNavItem>
     <button ngbNavLink>Game</button>
     <ng-template ngbNavContent>
