@@ -1,0 +1,21 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <li ngbNavItem>
+    <button ngbNavLink>User Profile</button>
+    <ng-template ngbNavContent>
+      <h1 style="margin: 150px">WELCOME USE X Y</h1></ng-template
+    >
+  </li>
+  <li ngbNavItem>
+    <button ngbNavLink>Settings</button>
+    <ng-template ngbNavContent>
+      <button style="margin: 150px; border-radius: 5px">Start a game</button>
+    </ng-template>
+  </li>
+  <li ngbNavItem>
+    <button ngbNavLink>Game</button>
+    <ng-template ngbNavContent>
+      <h1 style="margin: 150px">Loading..</h1></ng-template
+    >
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
