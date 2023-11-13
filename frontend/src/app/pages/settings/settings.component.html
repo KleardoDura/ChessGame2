@@ -35,11 +35,13 @@
       </select>
       <label for="opponent">Opponent:</label>
       <input
-        type="text"
+        required
+        type="search"
         id="opponent"
         name="opponent"
         placeholder="Enter opponent's username"
       />
+
       <button class="start-game-button" (click)="startGame($event)">
         Start Game
       </button>

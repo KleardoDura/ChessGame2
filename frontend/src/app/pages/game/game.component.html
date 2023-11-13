@@ -1,8 +1,16 @@
 <body>
   <h1>Chess Game</h1>
+
   <h2 id="tog">White's Turn</h2>
 
   <ul>
+    <div class="opponent-info">
+      <div class="opponent-name">
+        {{ opponentName || "Opponent Name" }}
+        <label class="timer">05:00</label>
+      </div>
+    </div>
+    <br />
     <div class="divv" id="row8">
       <li class="box" id="b801">Brook</li>
       <li class="box" id="b802">Bknight</li>
@@ -84,6 +92,13 @@
       <li class="box" id="b107">Wknight</li>
       <li class="box" id="b108">Wrook</li>
     </div>
+    <br />
+    <div class="opponent-info">
+      <div class="opponent-name">
+        {{ userName || "userName" }}
+        <label class="timer">{{ formatTimer() }}</label>
+      </div>
+    </div>
   </ul>
-  <script src="Chess.js"></script>
+  <button class="end-game" (click)="endGame($event)">End Game</button>
 </body>
