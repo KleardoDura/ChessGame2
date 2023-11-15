@@ -1,0 +1,81 @@
+.settings-page {
+  background-color: #3498db; /* Background color for the entire window */
+  color: #fff; /* Text color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+
+  /* Center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.settings-header {
+  background-color: #e74c3c; /* Header background color */
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.settings-page h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.settings-form,
+.game-settings {
+  width: 60%;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff; /* Form background color */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Form box shadow */
+}
+
+.settings-form h2,
+.game-settings h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: black;
+}
+
+.settings-form form,
+.game-settings form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings-form label,
+.game-settings label {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.settings-form input,
+.game-settings input,
+.game-settings select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #3498db; /* Border color */
+  border-radius: 5px;
+}
+
+.settings-form button,
+.game-settings button {
+  background-color: #3498db; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.settings-form button:hover,
+.game-settings button:hover {
+  background-color: #2588c7; /* Hover background color */
+}

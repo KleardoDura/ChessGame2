@@ -1,0 +1,13 @@
+.deletButton
+{
+  cursor:pointer;
+}
+.deletButton:hover
+{
+  background-color: rgb(128, 128, 128);
+}
+.deletButton:active
+{
+  position:relative;
+  top:2px;
+}

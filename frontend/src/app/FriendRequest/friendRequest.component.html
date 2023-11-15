@@ -1,0 +1,30 @@
+<div>
+  <div>Freunde suchen</div>
+  <div>
+    <label for="searchInput">Freunde hinzufügen:</label>
+    <input type="text" id="searchInput" [(ngModel)]="searchUser">
+    <button (click)="search()">Suchen</button>
+  </div>
+
+  <div *ngIf="foundUser && foundUser.length > 0">
+    <h3>Suchergebnisse:</h3>
+    <ul>
+      <li *ngFor="let user of foundUser">
+        {{ user.firstName }} {{ user.lastName }} - {{ user.email }}
+        <button (click)="sendFriendRequest(user.email)">Freundschaftsanfrage senden</button>
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="incomingFriendRequests && incomingFriendRequests.length > 0">
+    <h3>Freundschaftsanfragen:</h3>
+    <ul>
+      <li *ngFor="let request of incomingFriendRequests">
+        {{ request }}
+        <button (click)="acceptFriendRequest(request)">Annehmen</button>
+        <button (click)="rejectFriendRequest(request)">Ablehnen</button>
+      </li>
+    </ul>
+  </div>
+</div>
+

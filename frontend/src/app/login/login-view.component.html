@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<body>
+<div class="login-root">
+  <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh; flex-grow: 1;">
+    <div class="loginbackground box-background--white padding-top--64">
+    </div>
+    <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+      <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+        <h1>sep</h1>
+      </div>
+      <div class="formbg-outer">
+        <div class="formbg">
+          <div class="formbg-inner padding-horizontal--48">
+            <span class="padding-bottom--15">Login to Your Account</span>
+
+            <form id="stripe-login" ngNativeValidate (ngSubmit)="handleLogin()">
+              <div class="field padding-bottom--24">
+                <label class="input_label">Email</label>
+                <input type="text" ngModel="email" [(ngModel)]="email" id="email" name="email" required>
+              </div>
+
+              <div class="field padding-bottom--24">
+                <label class="input_label">Password</label>
+                <input type="password" placeholder="password" [(ngModel)]="password" id="password" name="password" required>
+              </div>
+
+              <div class="field padding-bottom--24">
+                <input style="background-color: blue" type="submit" name="submit" value="Login">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-link padding-top--24">
+          <span>Don't have an account? <a routerLink="/registration">Sign up</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+</body>
+</html>

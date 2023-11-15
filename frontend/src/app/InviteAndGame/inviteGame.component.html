@@ -1,0 +1,48 @@
+<div class="settings-page">
+  <div class="settings-header">
+    <h1>Settings</h1>
+  </div>
+  <div class="settings-form">
+    <h2>Invite friend</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter the username"
+      />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter the email"
+      />
+      <button class="update-button" (click)="updateUserDetails($event)">
+        Invite friend
+      </button>
+    </form>
+  </div>
+  <div class="game-settings">
+    <h2>Start a Game</h2>
+    <form>
+      <label for="game-mode">Game Mode:</label>
+      <select id="game-mode" name="game-mode">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <label for="opponent">Opponent:</label>
+      <input
+        type="text"
+        id="opponent"
+        name="opponent"
+        placeholder="Enter opponent's username"
+      />
+      <button class="start-game-button" (click)="startGame($event)">
+        Start Game
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Vorname</th>
+        <th scope="col">Nachname</th>
+        <th scope="col">Email</th>
+        <th scope="col"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users ">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+        <td><button (click)="removeUser(user)" class="deletButton">Freund entfernen</button></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <h3>Privatsphäre-Einstellungen:</h3>
+      <label>
+        Öffentliche Freundesliste
+        <input type="checkbox" [(ngModel)]="isFriendListPublic" (change)="setFriendListPrivacy(isFriendListPublic)">
+      </label>
+    </div>
+  </div>
+</div>
