@@ -1,4 +1,9 @@
 <ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <img
+    src="../../../assets/images/chess_pieces/logo.png"
+    alt="Image"
+    class="nav-item-image"
+  />
   <li ngbNavItem>
     <button ngbNavLink [routerLink]="'/user-profile'">User Profile</button>
     <ng-template ngbNavContent></ng-template>
@@ -25,9 +30,11 @@
     <button ngbNavLink [routerLink]="'/login'">Login</button>
     <ng-template ngbNavContent> </ng-template>
   </li>
-  <!--<li ngbNavItem>
-    <button ngbNavLink [routerLink]="'/game'">Game</button>
+
+  <li ngbNavItem *ngIf="isGameTabVisible()">
+    <button ngbNavLink [routerLink]="'/game'">Back to Game</button>
     <ng-template ngbNavContent></ng-template>
-  </li>-->
+  </li>
 </ul>
+
 <div [ngbNavOutlet]="nav"></div>

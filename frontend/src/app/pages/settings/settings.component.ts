@@ -31,6 +31,13 @@ export class SettingsComponent implements AfterViewInit {
   }
 
   startGame(event: Event): void {
+    if (localStorage.getItem('game') !== null) {
+      alert('Sorry but you are already in another game!');
+
+      this.router.navigateByUrl('/game');
+      return;
+    }
+
     const opponentInput = document.getElementById(
       'opponent'
     ) as HTMLInputElement;
@@ -44,6 +51,8 @@ export class SettingsComponent implements AfterViewInit {
     localStorage.setItem('opponent', JSON.stringify(this.friend));
     localStorage.setItem('user', JSON.stringify(this.user));
     event.preventDefault();
+
+    localStorage.setItem('game', '1');
     this.router.navigateByUrl('/game');
   }
 

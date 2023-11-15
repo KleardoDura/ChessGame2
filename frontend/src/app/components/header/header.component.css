@@ -5,7 +5,12 @@ ul.nav-tabs {
   border-radius: 5px;
   padding: 10px;
 }
-
+ul img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 /* Style the navigation items and links */
 ul.nav-tabs li {
   margin-right: 10px;

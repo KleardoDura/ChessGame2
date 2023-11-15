@@ -56,6 +56,7 @@ export class GameComponent implements OnInit, AfterViewInit {
     this.coloring();
   }
   endGame(event: Event): void {
+    localStorage.removeItem('game');
     this.router.navigateByUrl('/settings');
   }
 
